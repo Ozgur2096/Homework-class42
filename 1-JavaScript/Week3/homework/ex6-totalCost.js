@@ -28,11 +28,10 @@ const cartForParty = {
   banana: 2.3,
 };
 
-function calculateTotalPrice(object) {
+function calculateTotalPrice(obj) {
   let totalAmount = 0;
-   Object.values(obj).forEach((price) => (totalPrice += price));
-    totalAmount += value;
-  }
+   Object.values(obj).forEach((price) => (totalAmount += price));
+  
   return `Total: € ${totalAmount}`;
 }
 
