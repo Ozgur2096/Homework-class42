@@ -18,9 +18,9 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
    Use `console.log` each time to display the return value of the
    `giveCompliment` function to the console.
 -----------------------------------------------------------------------------*/
-function randomItemSelector(array) {
-  const index = Math.floor(Math.random() * array.length);
-  return array[index];
+function randomItemSelector(arrayOfCompliments) {
+  const index = Math.floor(Math.random() * arrayOfCompliments.length);
+  return arrayOfCompliments[index];
 }
 function giveCompliment(nameOfSomeone) {
   const compliments = [
