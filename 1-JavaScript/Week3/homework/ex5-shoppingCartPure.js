@@ -20,7 +20,7 @@ function addToShoppingCart(arrayShoppingList, groceryItem) {
   const newShoppingCart = [...arrayShoppingList];
   newShoppingCart.push(groceryItem);
   if (newShoppingCart.length > 3) {
-    newShoppingCart.shift();
+return [... arrayShoppingList, groceryItem].slice(-3);
   }
 
   return newShoppingCart;
