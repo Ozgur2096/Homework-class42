@@ -143,3 +143,57 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2023-01-11 05:32:02 info: --------------------------------------
 2023-01-11 05:32:05 info: All unit tests passed.
 2023-01-11 05:32:09 info: All steps were completed successfully
+2023-01-16 11:48:22 info: -------------------------------------------------
+2023-01-16 11:48:22 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 11:48:22 info: -------------------------------------------------
+2023-01-16 11:48:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Error: Cannot find module 'babel-jest'
+Require stack:
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\normalize.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\init\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\cli\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\bin\jest.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest\bin\jest.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Function.resolve (node:internal/modules/cjs/helpers:109:19)
+    at setupBabelJest (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\normalize.js:394:25)
+    at normalize (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\normalize.js:697:3)
+    at readConfig (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\index.js:219:74)
+    at async readConfigs (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-config\build\index.js:404:26)
+    at async runCLI (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\@jest\core\build\cli\index.js:182:59)
+    at async Object.run (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\cli\index.js:155:37)
+node:internal/modules/cjs/loader:995
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module 'exit'
+Require stack:
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\cli\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\index.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\bin\jest.js
+- C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest\bin\jest.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at _exit (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\cli\index.js:30:39)
+    at Object.run (C:\Users\ozgur\OneDrive\Masaüstü\HYF-Fork-Homework\Homework-class42\node_modules\jest-cli\build\cli\index.js:167:9) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ozgur\\OneDrive\\Masaüstü\\HYF-Fork-Homework\\Homework-class42\\node_modules\\jest-cli\\build\\cli\\index.js',
+    'C:\\Users\\ozgur\\OneDrive\\Masaüstü\\HYF-Fork-Homework\\Homework-class42\\node_modules\\jest-cli\\build\\index.js',
+    'C:\\Users\\ozgur\\OneDrive\\Masaüstü\\HYF-Fork-Homework\\Homework-class42\\node_modules\\jest-cli\\bin\\jest.js',
+    'C:\\Users\\ozgur\\OneDrive\\Masaüstü\\HYF-Fork-Homework\\Homework-class42\\node_modules\\jest\\bin\\jest.js'
+  ]
+}
+
+Node.js v18.12.1
+2023-01-16 11:53:23 info: -------------------------------------------------
+2023-01-16 11:53:23 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 11:53:23 info: -------------------------------------------------
+2023-01-16 11:54:20 info: All unit tests passed.
+2023-01-16 11:54:24 info: All steps were completed successfully

@@ -27,8 +27,7 @@ const fruitBasket = [
 
 // ! Function under test
 function sanitizeFruitBasket(arrayFruit, dangerousFruit) {
-  const copyArrayFruit = [...arrayFruit];
-  const myHarmlessBasket = copyArrayFruit.filter(
+  const myHarmlessBasket = [...arrayFruit].filter(
     (fruit) => fruit !== dangerousFruit
   );
   return myHarmlessBasket;
