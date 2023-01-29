@@ -120,9 +120,6 @@ function createGame(context, numRows, numColumns) {
     // Apply the newly computed state to the cells
     forEachCell((cell) => {
       cell.alive = cell.nextAlive;
-    });
-
-    forEachCell((cell) => {
       if (cell.alive) cell.lifeTime++;
       else cell.lifeTime = 0;
     });

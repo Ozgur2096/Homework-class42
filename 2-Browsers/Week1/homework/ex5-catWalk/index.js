@@ -57,8 +57,10 @@ function catWalk() {
       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
     window.setTimeout(partyOver, 5000);
   }
-  if (remainingDistanceOfTheRoad < 0) cat.location = 0;
+  if (remainingDistanceOfTheRoad + catImage.offsetWidth < 0)
+    cat.location = 0 - catImage.offsetWidth;
 }
 
-window.onload = catWalk;
-setInterval(catWalk, 50);
+window.addEventListener('load', () => {
+  setInterval(catWalk, 50);
+});

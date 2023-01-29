@@ -10,13 +10,13 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 const spanList = document.querySelectorAll('span');
-spanList[0].textContent = 'Ozgur';
-spanList[1].textContent = 'Fish';
-spanList[2].textContent = 'Turkey';
+[spanList[0].textContent, spanList[1].textContent, spanList[2].textContent] = [
+  'Ozgur',
+  'Fish',
+  'Turkey',
+];
 
 const listItems = document.querySelectorAll('li');
-for (let i = 0; i < listItems.length; i++) {
-  listItems[i].className = 'list-item';
-}
+listItems.forEach((listItem) => (listItem.className = 'list-item'));
 
 document.body.style.fontFamily = 'Arial, sans-serif';
