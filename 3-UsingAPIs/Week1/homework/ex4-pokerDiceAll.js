@@ -43,3 +43,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*  In the case of a rejected promise, dice that have not yet finished their roll continue to do so because
+there is nothing to prevent the function from doing it. "Reject" prevents only "resolve" and the rest of the function can continue to run.
+ */
